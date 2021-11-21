@@ -1,0 +1,173 @@
+/* CSS Document */
+*,
+*::after,
+*::before {
+  background-repeat: no-repeat;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #EDF2F8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+}
+
+main{
+    width: 375px;
+    padding:auto;
+    margin:auto;
+    text-align:center;
+}
+
+main .container {
+    margin: 60px 20px -30px 20px;
+    background-color:white;
+    text-align: left;
+    border-radius: 8px;
+}
+
+main .container:first-of-type {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position: top right 20px;
+    background-size: 100px;
+    color: white;
+}
+
+main .container:first-of-type figure img{
+    border: 2px solid hsl(263, 80%, 72%);
+}
+
+main .container:nth-of-type(2) {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+main .container:nth-of-type(2) figure img{
+    border: 2px solid hsl(217, 12%, 71%);
+}
+
+main .container:nth-of-type(3),
+.container:nth-of-type(5) {
+    color: hsl(217, 19%, 35%);
+}
+
+main .container:nth-of-type(4) {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+main .container:nth-of-type(4) figure img{
+    border: 2px solid hsl(263, 80%, 72%);
+}
+
+
+
+main div figure {
+width: 338px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0 33px;
+}
+
+
+figure div {
+display: flex;
+flex-direction:row;
+align-items: center;
+justify-content: flex-start;
+
+margin:20px 0;
+}
+
+
+figure img {
+  width: 30px;
+  border-radius: 50%;  
+  border: 2px solid white;
+}
+
+figure figcaption {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+    font-size: 12px;
+}
+
+figure figcaption p {
+    opacity: 70%;
+    margin-top: 2px;
+    font-weight: 400;
+}
+
+
+
+
+blockquote p {
+    margin: 0 0 20px 0;
+}
+
+blockquote p:nth-of-type(1) {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+blockquote p:nth-of-type(2) {
+    margin: 0 0 20px 0;
+    opacity: 70%;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin: 0 0 40px 0;
+    line-height: 20px;
+}
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+
+    margin-top: 30px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+
+
+    main { 
+        margin-top: 40px;
+        width: 1440px;
+        display: grid; 
+        grid-template-columns: repeat(4, 330px); 
+        grid-template-rows: repeat(2, 310px); 
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        }
+
+        main .container:nth-of-type(1) { grid-area: 1 / 1 / 2 / 3; } 
+        main .container:nth-of-type(2){ grid-area: 1 / 3 / 2 / 4; } 
+        main .container:nth-of-type(5) { grid-area: 1 / 4 / 3 / 5; } 
+        main .container:nth-of-type(3) { grid-area: 2 / 1 / 3 / 2; } 
+        main .container:nth-of-type(4) { grid-area: 2 / 2 / 3 / 4; } 
+
+
+        main div figure {
+            width: auto;
+            height: auto;
+            margin:0 auto;
+            padding: auto;
+        }
+}
