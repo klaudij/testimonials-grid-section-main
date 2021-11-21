@@ -30,8 +30,8 @@ View the optimal layout for the site depending on their device's screen size
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://klaudij.github.io/testimonials-grid-section-main/)
-- Live Site URL: [Add live site URL here](https://klaudij.github.io/testimonials-grid-section-main/)
+- Solution URL: [Solution URL here](https://klaudij.github.io/testimonials-grid-section-main/)
+- Live Site URL: [Live site URL here](https://klaudij.github.io/testimonials-grid-section-main/)
 
 ## My process
 
